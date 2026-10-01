@@ -1,0 +1,6 @@
+{
+  "name": "Tráfego Pago para Beleza",
+  "description": "Imersão Presencial de Tráfego Pago para Profissionais da Beleza em Manaus com Lucas Vasconcelos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

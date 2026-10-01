@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tráfego Pago para Beleza | Imersão Presencial com Lucas Vasconcelos</title>
+  <meta name="description" content="Imersão Presencial de Tráfego Pago para Profissionais da Beleza em Manaus com Lucas Vasconcelos. Aprenda na prática a atrair novas clientes e gerar agendamentos.">
+  <meta property="og:title" content="Tráfego Pago para Beleza | Imersão Presencial">
+  <meta property="og:description" content="Aprenda na prática a criar roteiros e vídeos que vendem seus procedimentos e a usar o Turbinar para atrair clientes para o seu estúdio em Manaus.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://i.postimg.cc/c1VYXkBv/Imagem-do-Chat-GPT-1-de-out-de-2026-12-16-07.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#060608">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       RESET & ROOT VARIABLES
+       ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-black: #060608;
+      --bg-surface: #0e0e13;
+      --bg-surface-elevated: #15151c;
+      --pink-primary: #ff0a68;
+      --pink-hover: #e00056;
+      --pink-glow: rgba(255, 10, 104, 0.35);
+      --pink-subtle: rgba(255, 10, 104, 0.12);
+      --text-white: #ffffff;
+      --text-gray-light: #e2e8f0;
+      --text-gray: #9ca3af;
+      --text-gray-dark: #64748b;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-pink: rgba(255, 10, 104, 0.35);
+      --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --container-max: 1140px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      font-family: var(--font-family);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* ============================================================
+       TYPOGRAPHY & ACCENTS
+       ============================================================ */
+    .text-pink {
+      color: var(--pink-primary);
+    }
+
+    .tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(255, 10, 104, 0.12);
+      border: 1px solid rgba(255, 10, 104, 0.3);
+      color: var(--pink-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .tag-badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--pink-primary);
+      display: inline-block;
+      box-shadow: 0 0 8px var(--pink-primary);
+    }
+
+    .section-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-gray-light);
+      line-height: 1.6;
+      max-width: 680px;
+    }
+
+    /* ============================================================
+       BUTTONS & CTAs
+       ============================================================ */
+    .btn-cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 20px 28px;
+      background: var(--pink-primary);
+      color: #ffffff;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-radius: 12px;
+      box-shadow: 0 10px 28px -4px var(--pink-glow), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-align: center;
+      min-height: 60px;
+    }
+
+    .btn-cta:hover {
+      background: var(--pink-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px -2px rgba(255, 10, 104, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    }
+
+    .btn-cta:active {
+      transform: translateY(0);
+    }
+
+    .btn-cta svg {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .btn-subtext {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      letter-spacing: 0.02em;
+    }
+
+    .btn-subtext svg {
+      width: 14px;
+      height: 14px;
+      color: #22c55e;
+      fill: currentColor;
+    }
+
+    /* ============================================================
+       TOP SCARCITY BAR (Sticky, Slim & Premium)
+       ============================================================ */
+    .topbar-scarcity {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      background: linear-gradient(90deg, #070205 0%, #15050f 50%, #070205 100%);
+      border-bottom: 1px solid rgba(255, 10, 104, 0.28);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 7px 16px;
+      font-size: 0.8rem;
+    }
+
+    .topbar-inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .topbar-tag {
+      font-weight: 700;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .topbar-tag .topbar-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--pink-primary);
+      box-shadow: 0 0 6px var(--pink-primary);
+    }
+
+    .topbar-timer-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #e2e8f0;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    .topbar-timer-label {
+      color: var(--text-gray);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .topbar-timer-value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 700;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2px 7px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      letter-spacing: 0.04em;
+    }
+
+    .topbar-vagas-badge {
+      font-weight: 800;
+      color: var(--pink-primary);
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+      background: rgba(255, 10, 104, 0.12);
+      border: 1px solid rgba(255, 10, 104, 0.35);
+      padding: 3px 10px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .topbar-desktop {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar-mobile {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      gap: 3px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .topbar-mobile-row1 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 767px) {
+      .topbar-scarcity {
+        padding: 5px 12px;
+      }
+      .topbar-desktop {
+        display: none !important;
+      }
+      .topbar-mobile {
+        display: flex !important;
+      }
+    }
+
+    /* ============================================================
+       SOCIAL PROOF POPUP (Inscrições Reais)
+       ============================================================ */
+    .social-proof-popup {
+      position: fixed;
+      bottom: 24px;
+      left: 20px;
+      z-index: 998;
+      max-width: 320px;
+      background: #0d0d12;
+      border: 1px solid rgba(255, 10, 104, 0.45);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75), 0 0 16px rgba(255, 10, 104, 0.15);
+      border-radius: 10px;
+      padding: 9px 13px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+      pointer-events: none;
+    }
+
+    .social-proof-popup.sp-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .sp-icon {
+      width: 26px;
+      height: 26px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: rgba(255, 10, 104, 0.14);
+      border: 1px solid rgba(255, 10, 104, 0.38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--pink-primary);
+    }
+
+    .sp-icon svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2.5;
+    }
+
+    .sp-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      line-height: 1.3;
+    }
+
+    .sp-header {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+
+    .sp-role {
+      color: var(--pink-primary);
+      font-weight: 600;
+      font-size: 0.76rem;
+    }
+
+    .sp-bullet {
+      color: var(--text-gray-dark);
+      font-size: 0.65rem;
+    }
+
+    .sp-text {
+      font-size: 0.74rem;
+      color: var(--text-gray);
+    }
+
+    @media (max-width: 767px) {
+      .social-proof-popup {
+        bottom: 84px;
+        left: 14px;
+        max-width: calc(100% - 95px);
+      }
+    }
+
+    /* ============================================================
+       1. HERO SECTION (Fundo com Foto de Lucas & Degradê Integrado)
+       ============================================================ */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      background-color: #060608;
+      background-image: 
+        linear-gradient(
+          to bottom,
+          rgba(6, 6, 8, 0) 0%,
+          rgba(6, 6, 8, 0) 28%,
+          rgba(6, 6, 8, 0.42) 42%,
+          rgba(6, 6, 8, 0.84) 58%,
+          rgba(6, 6, 8, 0.98) 76%,
+          #060608 92%
+        ),
+        url('https://i.postimg.cc/c1VYXkBv/Imagem-do-Chat-GPT-1-de-out-de-2026-12-16-07.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100% auto;
+      padding-top: clamp(340px, 86vw, 470px);
+      padding-bottom: 60px;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 320px;
+      height: 698.438px;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 16px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--pink-primary);
+      margin-bottom: 12px;
+    }
+
+    .hero-headline {
+      font-size: clamp(2.3rem, 7.8vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.06;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .hero-headline .text-pink {
+      color: var(--pink-primary);
+    }
+
+    .hero-benefit {
+      font-size: 19.4px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.35;
+      margin-bottom: 12px;
+      max-width: 580px;
+    }
+
+    .hero-subheadline {
+      height: 142.375px;
+      font-weight: normal;
+      font-size: 14.04px;
+      color: #e2e8f0;
+      line-height: 1.6;
+      max-width: 620px;
+      margin-bottom: 26px;
+    }
+
+    .hero-subheadline strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .hero-cta-wrapper {
+      width: 100%;
+      max-width: 460px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .hero-cta-btn {
+      width: 287px;
+      height: 54.1875px;
+      min-height: 54.1875px;
+      line-height: 22.6px;
+      font-size: 12px;
+      padding: 0 16px;
+      border-radius: 12px;
+    }
+
+    .hero-investment {
+      height: 65.875px;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      margin-bottom: 24px;
+    }
+
+    .hero-inv-label {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      color: var(--text-gray);
+      text-transform: uppercase;
+    }
+
+    .hero-inv-value {
+      font-size: clamp(2.4rem, 8vw, 3rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-inv-value span {
+      color: var(--pink-primary);
+      font-size: 0.85em;
+      margin-right: 3px;
+    }
+
+    .hero-event-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 10px;
+      max-width: 560px;
+      width: 100%;
+    }
+
+    .hero-info-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 13px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #e2e8f0;
+      text-transform: uppercase;
+    }
+
+    .hero-info-item svg {
+      width: 14px;
+      height: 14px;
+      color: var(--pink-primary);
+      flex-shrink: 0;
+    }
+
+    .hero-info-item.hero-info-scarcity {
+      background: rgba(255, 10, 104, 0.12);
+      border-color: rgba(255, 10, 104, 0.35);
+      color: #ff3377;
+    }
+
+    .hero-info-item.hero-info-scarcity svg {
+      color: #ff0a68;
+    }
+
+    @media (min-width: 640px) {
+      .hero-section {
+        background-size: min(100%, 720px) auto;
+        padding-top: clamp(420px, 64vw, 530px);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .hero-section {
+        background-size: 840px auto;
+        padding-top: 510px;
+        padding-bottom: 76px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .hero-section {
+        background-size: 920px auto;
+        padding-top: 550px;
+      }
+    }
+
+    /* Event Info Badges (usados em outras seções) */
+    .info-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    .info-badge svg {
+      width: 15px;
+      height: 15px;
+      color: var(--pink-primary);
+      flex-shrink: 0;
+    }
+
+    .info-badge.badge-scarcity {
+      background: rgba(255, 10, 104, 0.14);
+      border-color: rgba(255, 10, 104, 0.4);
+      color: #ff3377;
+    }
+
+    .info-badge.badge-scarcity svg {
+      color: #ff0a68;
+    }
+
+    /* ============================================================
+       SECTION SPACING & DECORATIONS
+       ============================================================ */
+    .section-spacing {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      position: relative;
+    }
+
+    .section-divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+    }
+
+    /* ============================================================
+       2. O QUE VOCÊ VAI APRENDER
+       ============================================================ */
+    .learn-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .learn-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 22px 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      transition: border-color 0.2s ease;
+    }
+
+    .learn-item:hover {
+      border-color: rgba(255, 10, 104, 0.3);
+    }
+
+    .learn-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: rgba(255, 10, 104, 0.1);
+      border: 1px solid rgba(255, 10, 104, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--pink-primary);
+    }
+
+    .learn-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 2;
+    }
+
+    .learn-content h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      margin-bottom: 6px;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .learn-content p {
+      font-size: 0.93rem;
+      color: var(--text-gray-light);
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       3. COMO VAI FUNCIONAR
+       ============================================================ */
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 36px;
+      margin-bottom: 32px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+    }
+
+    .step-number {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--pink-primary);
+      letter-spacing: -0.03em;
+      min-width: 36px;
+      line-height: 1;
+    }
+
+    .step-text {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.45;
+    }
+
+    .assistant-card {
+      padding: 24px 22px;
+      background: linear-gradient(135deg, rgba(255, 10, 104, 0.1) 0%, rgba(14, 14, 19, 0.95) 100%);
+      border: 1px solid var(--border-pink);
+      border-radius: 14px;
+      margin-bottom: 36px;
+    }
+
+    .assistant-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      color: var(--pink-primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .assistant-card h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+    }
+
+    .assistant-card p {
+      font-size: 0.94rem;
+      color: var(--text-gray-light);
+      line-height: 1.55;
+    }
+
+    /* ============================================================
+       4. PARA QUEM É
+       ============================================================ */
+    .for-who-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .target-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 26px 22px;
+    }
+
+    .target-block.target-positive {
+      border-color: rgba(255, 10, 104, 0.25);
+    }
+
+    .target-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .target-header h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      line-height: 1.25;
+    }
+
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.94rem;
+      line-height: 1.5;
+      color: var(--text-gray-light);
+    }
+
+    .check-list li svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .check-list.positive svg {
+      color: var(--pink-primary);
+    }
+
+    .target-block.target-negative {
+      background: rgba(14, 14, 19, 0.6);
+      border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .target-block.target-negative h3 {
+      color: var(--text-gray);
+    }
+
+    .target-block.target-negative p {
+      font-size: 0.94rem;
+      line-height: 1.6;
+      color: var(--text-gray);
+      margin-bottom: 12px;
+    }
+
+    .target-block.target-negative p:last-child {
+      margin-bottom: 0;
+      color: var(--text-gray-light);
+    }
+
+    /* ============================================================
+       5. QUEM SOU EU
+       ============================================================ */
+    .instructor-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 36px;
+    }
+
+    .instructor-image-container {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: #000000;
+    }
+
+    .instructor-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .instructor-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(6, 6, 8, 0.7) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .instructor-info h3 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+
+    .instructor-role {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--pink-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .instructor-bio {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .instructor-bio p {
+      font-size: 0.95rem;
+      color: var(--text-gray-light);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       6. ÚLTIMA CHAMADA
+       ============================================================ */
+    .final-section {
+      background: radial-gradient(circle at 50% 20%, rgba(255, 10, 104, 0.09) 0%, #060608 70%);
+      text-align: center;
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    .final-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-pink);
+      border-radius: 20px;
+      padding: 38px 24px;
+      box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.8), 0 0 30px -5px rgba(255, 10, 104, 0.15);
+    }
+
+    .final-event-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 24px 0 28px 0;
+    }
+
+    .final-price-wrap {
+      margin-bottom: 30px;
+    }
+
+    .final-price-label {
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--text-gray);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .final-price-number {
+      font-size: 2.75rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .final-price-number span {
+      color: var(--pink-primary);
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .footer {
+      padding: 30px 20px 90px 20px; /* bottom padding for floating button */
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-gray-dark);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* ============================================================
+       FLOATING WHATSAPP BUTTON (Mobile & Desktop)
+       ============================================================ */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px 12px 14px;
+      background: #25d366;
+      color: #ffffff;
+      border-radius: 9999px;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 4px 10px rgba(0, 0, 0, 0.3);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .floating-whatsapp.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .floating-whatsapp:hover {
+      background: #20bd5a;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .floating-whatsapp svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       DESKTOP RESPONSIVENESS (min-width: 900px)
+       ============================================================ */
+    @media (min-width: 900px) {
+      .hero-content {
+        max-width: 780px;
+      }
+
+      .hero-cta-wrapper {
+        max-width: 480px;
+      }
+
+      .btn-cta {
+        font-size: 1.15rem;
+        width: auto;
+        min-width: 380px;
+        padding: 22px 36px;
+      }
+
+      .btn-cta-wrap {
+        align-items: flex-start;
+      }
+
+      .section-title {
+        font-size: 2.35rem;
+      }
+
+      .section-subtitle {
+        font-size: 1.12rem;
+      }
+
+      .learn-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .learn-item:last-child {
+        grid-column: span 2;
+      }
+
+      .steps-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+      }
+
+      .step-item:last-child {
+        grid-column: span 2;
+      }
+
+      .for-who-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+        align-items: start;
+      }
+
+      .instructor-wrap {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .instructor-image-container {
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .instructor-bio p {
+        font-size: 1rem;
+      }
+
+      .final-card {
+        padding: 56px 48px;
+      }
+
+      .final-price-number {
+        font-size: 3.5rem;
+      }
+
+      .final-card .btn-cta-wrap {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       BARRA DE ESCASSEZ NO TOPO (Sticky, Fina & Elegante)
+       ============================================================ -->
+  <aside class="topbar-scarcity" id="topbarScarcity" aria-label="Informações da Imersão">
+    <div class="topbar-inner">
+      <!-- Versão Desktop (Linha Única) -->
+      <div class="topbar-desktop">
+        <div class="topbar-tag">
+          <span class="topbar-dot"></span>
+          <span>IMERSÃO &bull; 15 DE OUTUBRO</span>
+        </div>
+        <div class="topbar-timer-wrap">
+          <span class="topbar-timer-label">COMEÇA EM:</span>
+          <span class="topbar-timer-value" id="timerValueDesktop">--d --h --m --s</span>
+        </div>
+        <div class="topbar-vagas-badge js-topbar-vagas">
+          RESTAM 11 VAGAS
+        </div>
+      </div>
+
+      <!-- Versão Mobile (Compacta em 2 Linhas) -->
+      <div class="topbar-mobile">
+        <div class="topbar-mobile-row1">
+          <div class="topbar-tag">
+            <span class="topbar-dot"></span>
+            <span>IMERSÃO &bull; 15 OUT</span>
+          </div>
+          <div class="topbar-vagas-badge js-topbar-vagas">
+            RESTAM 11 VAGAS
+          </div>
+        </div>
+        <div class="topbar-timer-wrap">
+          <span class="topbar-timer-label">COMEÇA EM:</span>
+          <span class="topbar-timer-value" id="timerValueMobile">--d : --h : --m : --s</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       1. HERO SECTION (Fundo com Foto de Lucas & Degradê Integrado)
+       ============================================================ -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        
+        <!-- 1. IMERSÃO PRESENCIAL -->
+        <span class="hero-tag">IMERSÃO PRESENCIAL</span>
+
+        <!-- 2. HEADLINE PRINCIPAL -->
+        <h1 class="hero-headline">
+          TRÁFEGO PAGO<br>
+          <span class="text-pink">PARA BELEZA</span>
+        </h1>
+
+        <!-- 3. HEADLINE DE BENEFÍCIO -->
+        <h2 class="hero-benefit">
+          Quer atrair mais clientes para o seu estúdio?
+        </h2>
+
+        <!-- 4. SUBHEADLINE -->
+        <p class="hero-subheadline">
+          Aprenda na prática a <strong>criar roteiros e vídeos que vendem</strong> seus procedimentos e a <strong>usar o Turbinar de forma simples</strong> para alcançar novas clientes e gerar mais oportunidades de agendamento.
+        </p>
+
+        <!-- 5. BOTÃO PRINCIPAL (Imediatamente abaixo da subheadline) -->
+        <div class="hero-cta-wrapper">
+          <a href="#" class="btn-cta hero-cta-btn js-whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.561 3.778 1.53 5.321L2 22l4.802-1.488a9.986 9.986 0 0 0 5.229 1.52c5.536 0 10.031-4.495 10.031-10.031C22.062 6.495 17.567 2 12.031 2zm5.836 14.28c-.244.688-1.418 1.332-1.97 1.388-.517.052-1.188.074-3.791-.998-3.327-1.371-5.467-4.75-5.632-4.97-.165-.22-1.344-1.787-1.344-3.411 0-1.624.851-2.423 1.155-2.753.303-.33.66-.413.88-.413.22 0 .44.002.632.012.206.01.48-.078.75.57.275.66.935 2.282 1.018 2.447.082.165.137.358.027.578-.11.22-.165.358-.33.55-.165.193-.347.43-.495.578-.165.165-.337.345-.145.674.193.33.856 1.412 1.836 2.285 1.261 1.124 2.324 1.472 2.654 1.637.33.165.522.138.715-.083.193-.22.825-.963 1.045-1.293.22-.33.44-.275.742-.165.303.11 1.925.908 2.255 1.073.33.165.55.247.632.385.083.137.083.8-.161 1.488z"/>
+            </svg>
+            QUERO GARANTIR MINHA VAGA
+          </a>
+          <span class="btn-subtext">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Falar pelo WhatsApp
+          </span>
+        </div>
+
+        <!-- 6. INVESTIMENTO (Logo abaixo do botão) -->
+        <div class="hero-investment">
+          <span class="hero-inv-label">INVESTIMENTO</span>
+          <div class="hero-inv-value"><span>R$</span> 197</div>
+        </div>
+
+        <!-- 7. INFORMAÇÕES DO EVENTO (Abaixo do investimento, compacto e limpo) -->
+        <div class="hero-event-info">
+          <div class="hero-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>15 DE OUTUBRO</span>
+          </div>
+          <div class="hero-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>17H30 ÀS 22H</span>
+          </div>
+          <div class="hero-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>MANAUS – AM</span>
+          </div>
+          <div class="hero-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>PRESENCIAL</span>
+          </div>
+          <div class="hero-info-item hero-info-scarcity">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span class="js-vagas-hero">APENAS 11 VAGAS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================================
+       2. O QUE VOCÊ VAI APRENDER
+       ============================================================ -->
+  <section class="section-spacing" id="conteudo">
+    <div class="container">
+      <div class="tag-badge" style="margin-bottom: 12px;">CONTEÚDO PRÁTICO</div>
+      <h2 class="section-title">O QUE VOCÊ VAI APRENDER</h2>
+      <p class="section-subtitle">
+        Você não precisa entender de ferramentas complicadas para começar a anunciar o seu estúdio. Durante a imersão, vamos fazer tudo de forma prática.
+      </p>
+
+      <div class="learn-list">
+        
+        <!-- Item 1 -->
+        <div class="learn-item">
+          <div class="learn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <div class="learn-content">
+            <h3>ROTEIROS PARA VENDER SEUS PROCEDIMENTOS</h3>
+            <p>Aprenda o que falar nos seus vídeos para despertar o interesse de novas clientes.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="learn-item">
+          <div class="learn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+          </div>
+          <div class="learn-content">
+            <h3>OS VÍDEOS CERTOS PARA ANUNCIAR</h3>
+            <p>Entenda o que gravar, como apresentar seu procedimento e quais vídeos fazem mais sentido para divulgar.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="learn-item">
+          <div class="learn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline><path d="M16.24 7.76a6 6 0 1 1-8.48 0"></path></svg>
+          </div>
+          <div class="learn-content">
+            <h3>TRÁFEGO PAGO DE FORMA SIMPLES</h3>
+            <p>Aprenda a configurar seus anúncios sem precisar entrar na complexidade do Gerenciador de Anúncios.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="learn-item">
+          <div class="learn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="learn-content">
+            <h3>COMO USAR O TURBINAR</h3>
+            <p>Entenda público, região, investimento e os principais pontos para colocar seu anúncio para rodar.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="learn-item">
+          <div class="learn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="learn-content">
+            <h3>DO ANÚNCIO AO AGENDAMENTO</h3>
+            <p>Entenda como usar seus vídeos e anúncios para gerar novas oportunidades de agendamento.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================================
+       3. COMO VAI FUNCIONAR
+       ============================================================ -->
+  <section class="section-spacing" id="metodologia">
+    <div class="container">
+      <div class="tag-badge" style="margin-bottom: 12px;">DINÂMICA DO ENCONTRO</div>
+      <h2 class="section-title">COMO VAI FUNCIONAR</h2>
+      <p class="section-subtitle">
+        Essa não será uma aula para você ficar apenas assistindo. A proposta é entender o processo e aprender como aplicá-lo no seu próprio estúdio.
+      </p>
+
+      <div class="steps-list">
+        
+        <div class="step-item">
+          <div class="step-number">01</div>
+          <div class="step-text">Escolha o procedimento que você quer divulgar.</div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">02</div>
+          <div class="step-text">Aprenda a criar um roteiro pensado para vender esse procedimento.</div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">03</div>
+          <div class="step-text">Entenda como transformar o roteiro em um vídeo.</div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">04</div>
+          <div class="step-text">Aprenda a configurar o anúncio de forma simples.</div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">05</div>
+          <div class="step-text">Saia sabendo como repetir esse processo para outros procedimentos do seu estúdio.</div>
+        </div>
+
+      </div>
+
+      <!-- Assistente de Roteiros -->
+      <div class="assistant-card">
+        <div class="assistant-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          FERRAMENTA EXCLUSIVA
+        </div>
+        <h4>ACESSO AO ASSISTENTE DE ROTEIROS</h4>
+        <p>Durante a imersão, você também terá acesso a um assistente criado para ajudar na criação de ideias e roteiros de vídeos para os seus procedimentos.</p>
+      </div>
+
+      <!-- CTA após Como Vai Funcionar -->
+      <div class="btn-cta-wrap">
+        <a href="#" class="btn-cta js-whatsapp-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24">
+            <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.561 3.778 1.53 5.321L2 22l4.802-1.488a9.986 9.986 0 0 0 5.229 1.52c5.536 0 10.031-4.495 10.031-10.031C22.062 6.495 17.567 2 12.031 2zm5.836 14.28c-.244.688-1.418 1.332-1.97 1.388-.517.052-1.188.074-3.791-.998-3.327-1.371-5.467-4.75-5.632-4.97-.165-.22-1.344-1.787-1.344-3.411 0-1.624.851-2.423 1.155-2.753.303-.33.66-.413.88-.413.22 0 .44.002.632.012.206.01.48-.078.75.57.275.66.935 2.282 1.018 2.447.082.165.137.358.027.578-.11.22-.165.358-.33.55-.165.193-.347.43-.495.578-.165.165-.337.345-.145.674.193.33.856 1.412 1.836 2.285 1.261 1.124 2.324 1.472 2.654 1.637.33.165.522.138.715-.083.193-.22.825-.963 1.045-1.293.22-.33.44-.275.742-.165.303.11 1.925.908 2.255 1.073.33.165.55.247.632.385.083.137.083.8-.161 1.488z"/>
+          </svg>
+          QUERO GARANTIR MINHA VAGA
+        </a>
+        <span class="btn-subtext">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Falar pelo WhatsApp
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================================
+       4. PARA QUEM É
+       ============================================================ -->
+  <section class="section-spacing" id="publico">
+    <div class="container">
+      <div class="tag-badge" style="margin-bottom: 12px;">PERFIL IDEAL</div>
+      <h2 class="section-title">ESSA IMERSÃO É PARA VOCÊ QUE...</h2>
+
+      <div class="for-who-grid">
+        
+        <!-- Para quem é -->
+        <div class="target-block target-positive">
+          <div class="target-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--pink-primary)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <h3>É perfeito para o seu momento</h3>
+          </div>
+
+          <ul class="check-list positive">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Trabalha com unhas, cílios, sobrancelhas, cabelo, maquiagem, estética ou outros serviços do mercado da beleza.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tem um estúdio, salão ou atende suas próprias clientes.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Quer atrair novas clientes através do Instagram.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Já tentou turbinar alguma publicação e não soube se estava fazendo da melhor forma.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tem dificuldade para saber o que gravar e o que falar nos vídeos.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Quer aprender uma forma simples de divulgar o próprio trabalho.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Não é para você se -->
+        <div class="target-block target-negative">
+          <div class="target-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-gray-dark)" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <h3>NÃO É PARA VOCÊ SE...</h3>
+          </div>
+          <p>
+            Está procurando um curso avançado de tráfego pago ou quer aprender todas as ferramentas do Gerenciador de Anúncios.
+          </p>
+          <p>
+            A proposta desta imersão é ensinar profissionais da beleza a criarem vídeos de venda e anunciarem seus próprios procedimentos de uma maneira simples e prática.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================================
+       5. QUEM SOU EU
+       ============================================================ -->
+  <section class="section-spacing" id="professor">
+    <div class="container">
+      <div class="tag-badge" style="margin-bottom: 12px;">SEU INSTRUTOR</div>
+      <h2 class="section-title">QUEM VAI TE ENSINAR</h2>
+
+      <div class="instructor-wrap">
+        
+        <!-- Imagem do Professor: Integrada sem filtros pesados -->
+        <div class="instructor-image-container">
+          <img 
+            src="https://i.postimg.cc/ZqGZ1N7r/Imagem-do-Chat-GPT-1-de-out-de-2026-12-19-59.png" 
+            alt="Lucas Vasconcelos - Videomaker e Gestor de Tráfego" 
+            class="instructor-img"
+            width="440"
+            height="550"
+            loading="lazy"
+          >
+          <div class="instructor-overlay"></div>
+        </div>
+
+        <!-- Informações e Bio -->
+        <div class="instructor-info">
+          <h3>Lucas Vasconcelos</h3>
+          <span class="instructor-role">Videomaker &amp; Gestor de Tráfego</span>
+
+          <div class="instructor-bio">
+            <p>
+              Tenho 25 anos e há mais de 4 anos trabalho com produção de vídeos e tráfego pago. Sou videomaker, gestor de tráfego e também estou à frente de uma agência de marketing.
+            </p>
+            <p>
+              Ao longo desse tempo, já trabalhei com estratégias de conteúdo, anúncios, cursos online e mentorias individuais, ajudando negócios e profissionais a usarem o digital de forma mais estratégica.
+            </p>
+            <p>
+              Hoje, uma das minhas principais frentes é ajudar profissionais da beleza a criarem vídeos que realmente apresentam e vendem seus procedimentos e a usarem o tráfego pago de uma forma simples, sem transformar isso em algo complicado.
+            </p>
+            <p>
+              Foi dessa experiência que nasceu a Imersão Tráfego Pago para Beleza: um encontro prático para ensinar o que eu aplicaria para divulgar um estúdio e buscar novos agendamentos.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================================
+       6. ÚLTIMA CHAMADA
+       ============================================================ -->
+  <section class="final-section" id="inscricao">
+    <div class="container">
+      
+      <div class="final-card">
+        <div class="tag-badge" style="margin-bottom: 14px;">GARANTA SUA PARTICIPAÇÃO</div>
+        
+        <h2 class="section-title" style="margin-bottom: 14px;">
+          PRONTA PARA COMEÇAR A DIVULGAR SEU ESTÚDIO DE OUTRA FORMA?
+        </h2>
+
+        <p class="section-subtitle" style="margin: 0 auto 24px auto;">
+          Aprenda a criar os vídeos, roteiros e anúncios que você poderá aplicar no seu próprio estúdio.
+        </p>
+
+        <!-- Informações resumidas -->
+        <div style="font-weight: 800; font-size: 0.92rem; letter-spacing: 0.08em; color: var(--pink-primary); text-transform: uppercase;">
+          IMERSÃO PRESENCIAL &bull; TRÁFEGO PAGO PARA BELEZA
+        </div>
+
+        <div class="final-event-meta">
+          <div class="info-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            15 de outubro
+          </div>
+          <div class="info-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            17h30 às 22h
+          </div>
+          <div class="info-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Manaus – AM
+          </div>
+          <div class="info-badge badge-scarcity">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <span class="js-vagas-final">Apenas 11 vagas</span>
+          </div>
+        </div>
+
+        <!-- Preço Final -->
+        <div class="final-price-wrap">
+          <div class="final-price-label">INVESTIMENTO:</div>
+          <div class="final-price-number"><span>R$</span> 197</div>
+        </div>
+
+        <!-- Botão Grande CTA Final -->
+        <div class="btn-cta-wrap">
+          <a href="#" class="btn-cta js-whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.561 3.778 1.53 5.321L2 22l4.802-1.488a9.986 9.986 0 0 0 5.229 1.52c5.536 0 10.031-4.495 10.031-10.031C22.062 6.495 17.567 2 12.031 2zm5.836 14.28c-.244.688-1.418 1.332-1.97 1.388-.517.052-1.188.074-3.791-.998-3.327-1.371-5.467-4.75-5.632-4.97-.165-.22-1.344-1.787-1.344-3.411 0-1.624.851-2.423 1.155-2.753.303-.33.66-.413.88-.413.22 0 .44.002.632.012.206.01.48-.078.75.57.275.66.935 2.282 1.018 2.447.082.165.137.358.027.578-.11.22-.165.358-.33.55-.165.193-.347.43-.495.578-.165.165-.337.345-.145.674.193.33.856 1.412 1.836 2.285 1.261 1.124 2.324 1.472 2.654 1.637.33.165.522.138.715-.083.193-.22.825-.963 1.045-1.293.22-.33.44-.275.742-.165.303.11 1.925.908 2.255 1.073.33.165.55.247.632.385.083.137.083.8-.161 1.488z"/>
+            </svg>
+            QUERO GARANTIR MINHA VAGA
+          </a>
+          <span class="btn-subtext">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Falar pelo WhatsApp
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Rodapé discreto -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Imersão Tráfego Pago para Beleza &bull; Lucas Vasconcelos. Todos os direitos reservados.</p>
+      <p style="margin-top: 6px; font-size: 0.75rem;">Manaus – Amazonas &bull; Vagas limitadas para acompanhamento prático.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       NOTIFICAÇÃO DISCRETA DE NOVA INSCRIÇÃO (Inscrições Reais)
+       ============================================================ -->
+  <div id="socialProofPopup" class="social-proof-popup" aria-live="polite">
+    <div class="sp-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <div class="sp-content">
+      <p class="sp-header"><span class="sp-name" id="spName"></span> <span class="sp-bullet">&bull;</span> <span class="sp-role" id="spRole"></span></p>
+      <p class="sp-text">garantiu uma vaga na imersão</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BOTÃO FLUTUANTE DE WHATSAPP (Mobile e Desktop)
+       Aparece discretamente após rolar a primeira seção
+       ============================================================ -->
+  <a href="#" class="floating-whatsapp js-whatsapp-link" id="floatingWhatsapp" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.561 3.778 1.53 5.321L2 22l4.802-1.488a9.986 9.986 0 0 0 5.229 1.52c5.536 0 10.031-4.495 10.031-10.031C22.062 6.495 17.567 2 12.031 2zm5.836 14.28c-.244.688-1.418 1.332-1.97 1.388-.517.052-1.188.074-3.791-.998-3.327-1.371-5.467-4.75-5.632-4.97-.165-.22-1.344-1.787-1.344-3.411 0-1.624.851-2.423 1.155-2.753.303-.33.66-.413.88-.413.22 0 .44.002.632.012.206.01.48-.078.75.57.275.66.935 2.282 1.018 2.447.082.165.137.358.027.578-.11.22-.165.358-.33.55-.165.193-.347.43-.495.578-.165.165-.337.345-.145.674.193.33.856 1.412 1.836 2.285 1.261 1.124 2.324 1.472 2.654 1.637.33.165.522.138.715-.083.193-.22.825-.963 1.045-1.293.22-.33.44-.275.742-.165.303.11 1.925.908 2.255 1.073.33.165.55.247.632.385.083.137.083.8-.161 1.488z"/>
+    </svg>
+    <span>Garantir Vaga</span>
+  </a>
+
+  <!-- ============================================================
+       CONFIGURAÇÃO CENTRAL & SCRIPTS
+       ============================================================ -->
+  <script>
+    /* ==============================
+       CONFIGURAÇÕES DA IMERSÃO
+    ================================ */
+
+    const WHATSAPP_NUMBER = "5592999915093";
+
+    const VAGAS_RESTANTES = 11;
+
+    const DATA_IMERSAO = "2026-10-15T17:30:00-04:00";
+
+    const INSCRICOES_CONFIRMADAS = [
+        // Adicione somente inscrições reais:
+        // { nome: "Ana", profissao: "Nail Designer" },
+        // { nome: "Mariana", profissao: "Lash Designer" }
+    ];
+
+    const WHATSAPP_MESSAGE = "Oi! Vi a página da Imersão Tráfego Pago para Beleza e quero saber como garantir minha vaga.";
+    const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Configurar Links do WhatsApp em todos os botões e no botão flutuante
+      const whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
+      whatsappLinks.forEach(link => {
+        link.href = WHATSAPP_URL;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      });
+
+      // 2. Atualizar contagem de vagas em toda a página de forma reativa
+      function updateVagas() {
+        const topbarBadges = document.querySelectorAll('.js-topbar-vagas');
+        topbarBadges.forEach(el => {
+          el.textContent = `RESTAM ${VAGAS_RESTANTES} VAGAS`;
+        });
+
+        const heroBadges = document.querySelectorAll('.js-vagas-hero');
+        heroBadges.forEach(el => {
+          el.textContent = `APENAS ${VAGAS_RESTANTES} VAGAS`;
+        });
+
+        const finalBadges = document.querySelectorAll('.js-vagas-final');
+        finalBadges.forEach(el => {
+          el.textContent = `Apenas ${VAGAS_RESTANTES} vagas`;
+        });
+      }
+      updateVagas();
+
+      // 3. Temporizador Real com Timezone America/Manaus (-04:00)
+      function initCountdown() {
+        const desktopTimer = document.getElementById('timerValueDesktop');
+        const mobileTimer = document.getElementById('timerValueMobile');
+        const targetTimestamp = new Date(DATA_IMERSAO).getTime();
+
+        function tick() {
+          const now = Date.now();
+          const diff = targetTimestamp - now;
+
+          if (diff <= 0) {
+            const finishedMsg = 'A IMERSÃO COMEÇOU';
+            if (desktopTimer) desktopTimer.textContent = finishedMsg;
+            if (mobileTimer) mobileTimer.textContent = finishedMsg;
+            return;
+          }
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          const pad = (n) => String(n).padStart(2, '0');
+
+          if (desktopTimer) {
+            desktopTimer.textContent = `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+          }
+          if (mobileTimer) {
+            mobileTimer.textContent = `${days}d : ${pad(hours)}h : ${pad(minutes)}m : ${pad(seconds)}s`;
+          }
+        }
+
+        tick();
+        setInterval(tick, 1000);
+      }
+      initCountdown();
+
+      // 4. Notificação Discreta de Inscrição Real (Social Proof)
+      function initSocialProof() {
+        const popup = document.getElementById('socialProofPopup');
+        const nameEl = document.getElementById('spName');
+        const roleEl = document.getElementById('spRole');
+
+        if (!popup || !nameEl || !roleEl) return;
+
+        // Se a lista estiver vazia, NÃO MOSTRAR NENHUM POPUP
+        if (!Array.isArray(INSCRICOES_CONFIRMADAS) || INSCRICOES_CONFIRMADAS.length === 0) {
+          return;
+        }
+
+        let currentIndex = 0;
+
+        function displayNext() {
+          const entry = INSCRICOES_CONFIRMADAS[currentIndex];
+          if (!entry || !entry.nome) return;
+
+          nameEl.textContent = entry.nome;
+          roleEl.textContent = entry.profissao || '';
+
+          popup.classList.add('sp-visible');
+
+          // Permanece visível por 4 segundos
+          setTimeout(() => {
+            popup.classList.remove('sp-visible');
+          }, 4000);
+
+          currentIndex = (currentIndex + 1) % INSCRICOES_CONFIRMADAS.length;
+        }
+
+        // Primeira exibição após 4 segundos
+        setTimeout(displayNext, 4000);
+
+        // Repete a cada 13 segundos se houver inscrições na lista
+        setInterval(displayNext, 13000);
+      }
+      initSocialProof();
+
+      // 5. Botão Flutuante de WhatsApp (após primeira dobra)
+      const heroSection = document.getElementById('hero');
+      const floatingButton = document.getElementById('floatingWhatsapp');
+
+      if (heroSection && floatingButton) {
+        const toggleFloatingBtn = () => {
+          const heroBottom = heroSection.getBoundingClientRect().bottom;
+          if (heroBottom < 100) {
+            floatingButton.classList.add('visible');
+          } else {
+            floatingButton.classList.remove('visible');
+          }
+        };
+
+        window.addEventListener('scroll', toggleFloatingBtn, { passive: true });
+        toggleFloatingBtn();
+      }
+    });
+  </script>
+</body>
+</html>
